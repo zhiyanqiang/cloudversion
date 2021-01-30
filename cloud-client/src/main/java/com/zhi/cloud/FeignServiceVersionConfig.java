@@ -2,6 +2,7 @@ package com.zhi.cloud;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.HashMap;
@@ -17,6 +18,7 @@ import java.util.Map;
  */
 @Configuration
 @ConfigurationProperties(prefix = "feign.service.version")
+@EnableConfigurationProperties
 @Data
 public class FeignServiceVersionConfig {
     private Map<String,String> map = new HashMap<>();
