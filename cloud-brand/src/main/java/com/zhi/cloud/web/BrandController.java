@@ -18,6 +18,6 @@ public class BrandController {
     private String version;
     @GetMapping("sayHello")
     private String sayHello(){
-        return "brand--->" + version;
+        return "1.0修改brand--->" + version;
     }
 }
