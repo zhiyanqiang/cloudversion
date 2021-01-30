@@ -18,6 +18,6 @@ public class CategoryController {
     private String version;
     @GetMapping("sayHello")
     private String sayHello(){
-        return "1.1修改category--->" + version;
+        return "category--->" + version;
     }
 }
