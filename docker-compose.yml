@@ -1,0 +1,15 @@
+version: '2.2'
+services:
+  eueka:
+    hostname: eureka
+    image: eureka
+    ports:
+      - 8761:8761
+  cloud-category:
+    image: cloud-category
+    depends_on:
+      - eueka
+  cloud-brand:
+    image: cloud-brand
+    depends_on:
+      - eueka
